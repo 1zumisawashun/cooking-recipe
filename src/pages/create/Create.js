@@ -12,10 +12,7 @@ export default function Create() {
   const ingredientInput = useRef(null);
   const history = useHistory();
 
-  const { postData, data, error } = useFetch(
-    "http://localhost:3000/recipes",
-    "POST"
-  );
+  const { postData, data } = useFetch("http://localhost:3000/recipes", "POST");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,9 +38,8 @@ export default function Create() {
 
   // redirect user
   useEffect(() => {
-    if (data) {
-      history.push("/");
-    }
+    if (data) history.push("/");
+    // eslint-disable-next-line
   }, [data]);
   // FIXME: React Hook useEffect has a missing dependency: 'history'. Either include it or remove the dependency array.
 
