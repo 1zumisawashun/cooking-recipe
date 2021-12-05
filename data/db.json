@@ -36,6 +36,18 @@
       ],
       "method": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minima ex rem quis similique eum ratione quaerat, voluptas molestias ut repudiandae delectus voluptates. Eius esse at tenetur ab accusamus excepturi?",
       "cookingTime": "35 minutes"
+    },
+    {
+      "title": "special-curry",
+      "ingredients": [
+        "tomato",
+        "carott",
+        "poteto",
+        "onion"
+      ],
+      "method": "korehatesutdesu",
+      "cookingTime": "10minutes",
+      "id": "P4Pbqbu"
     }
   ]
 }
