@@ -1,4 +1,5 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { useTheme } from "./hooks/useTheme";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -9,8 +10,11 @@ import Recipe from "./pages/recipe/Recipe";
 import ThemeSelector from "./components/ThemeSelector";
 
 function App() {
+  // useContext & useReducer
+  const { mode } = useTheme();
+
   return (
-    <div className="App">
+    <div className={`App ${mode}`}>
       <BrowserRouter>
         <Navbar />
         <ThemeSelector />
